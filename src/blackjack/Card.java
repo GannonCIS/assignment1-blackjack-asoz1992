@@ -10,5 +10,11 @@ package blackjack;
  * @author gubotdev
  */
 public class Card {
+    public final String RANK;
+    public final String SUIT;
     
+    public Card(String r, String s){
+        RANK = r;
+        SUIT = s;
+    }
 }
