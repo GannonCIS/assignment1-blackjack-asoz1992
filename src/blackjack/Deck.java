@@ -17,18 +17,19 @@ public class Deck {
     
     public Deck(){
         
-    }
+   }
       private void initDeck(){
        
    }
        private void shuffle(){
            
-       }
+   }
        //printDeck is for testing only-- delete me 
        public  void printDeck(){
            
-       }
+   }
        public  Card dealCard(){
            return null;  // do not forget change this!!!!!!!!
-       }
+   }
+       
    }
