@@ -16,10 +16,13 @@ public class BlackJack {
      */
     public static void main(String[] args) {
        Deck myDeck = new Deck();
-       
-       for(int i = 0; i < 54; i++){
+       Hand myHand = new Hand ();
+       for(int i = 0; i < 6; i++){
           Card temp = myDeck.dealCard();
-         System.out.println(temp.RANK + "-of-" + temp.SUIT);
+          myHand.addCard(myDeck.dealCard());
+         System.out.println("num0fCards:"+ myHand.getNum0fCard() + " |"
+                 + "scroe:" + myHand.getScore());
+         
        }
        
     }
