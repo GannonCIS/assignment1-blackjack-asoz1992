@@ -22,7 +22,7 @@ public class Hand {
     public int getScore(){
         return score;
     }
-    public void addCard (Card newCard ){
+    public void addCard(Card newCard ){
         
     }
     public void printHand(){
