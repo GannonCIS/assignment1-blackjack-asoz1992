@@ -16,7 +16,7 @@ public class Hand {
     
     public Hand(){}
     
-    public int getNum0fCard(){
+    public int getNum0fCards(){
         return num0fCards;
     }
     public int getScore(){

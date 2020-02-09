@@ -1,9 +1,11 @@
+package blackjack;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package blackjack;
+
 
 /**
  *
@@ -20,7 +22,7 @@ public class BlackJack {
        for(int i = 0; i < 6; i++){
           Card temp = myDeck.dealCard();
           myHand.addCard(myDeck.dealCard());
-         System.out.println("num0fCards:"+ myHand.getNum0fCard() + " |"
+         System.out.println("num0fCards:"+ myHand.getNum0fCards() + " |"
                  + "scroe:" + myHand.getScore());
          
        }

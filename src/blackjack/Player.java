@@ -24,7 +24,7 @@ public class Player {
         return myHand;
         
     }
-    public String getname(){
+    public String getName(){
         return name;
         
     }
