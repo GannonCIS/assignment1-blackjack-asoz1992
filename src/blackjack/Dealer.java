@@ -18,6 +18,10 @@ public class Dealer {
     public Dealer(int unm0fPlayers){
         initMyPlayers(unm0fPlayers);
     }    
+
+    Dealer() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
         
         public void dealOutOpeningHand(){
             for(int i = 0; i< 2; i++){
@@ -51,7 +55,20 @@ public class Dealer {
         }
         
         public void declerWinner(){
-            
+            for(Player currPlayer : myPlayers){
+                if(currPlayer.getMyHand().getScore() > 21){
+                    System.out.println("Dealer won!");
+                }else if(dealerHand.getScore() > 21 && dealerHand.getNum0fCards()
+                        > 5 ){
+                    System.out.println("The player won!");
+                }else if (currPlayer.getMyHand().getScore() < 22 && dealerHand
+                        .getScore() < 21 && dealerHand.getNum0fCards() < 5){
+                            System.out.println("The Player won!");
+                }else if (currPlayer.getMyHand().getNum0fCards() == 5 &&
+                        dealerHand.getNum0fCards() < 5  && dealerHand.getScore() < 21){
+                    System.out.println("The Player won!");
+                }
+            }
         }
         
     private void initMyPlayers(int num){
@@ -63,11 +80,9 @@ public class Dealer {
                     myPlayers[i] = new Player(i+1);
                 }else{
                     myPlayers[i] = new Player(name);
-                }
-                
+                } 
             }
-        
+     
     }
-    
 }
 

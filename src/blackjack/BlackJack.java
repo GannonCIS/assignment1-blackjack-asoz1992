@@ -17,16 +17,17 @@ public class BlackJack {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       Deck myDeck = new Deck();
-       Hand myHand = new Hand ();
-       for(int i = 0; i < 6; i++){
+        Dealer myDealer  = new Dealer();
+        Deck myDeck = new Deck();
+        Hand myHand = new Hand ();
+        for(int i = 0; i < 6; i++){
           Card temp = myDeck.dealCard();
           myHand.addCard(myDeck.dealCard());
-         System.out.println("num0fCards:"+ myHand.getNum0fCards() + " |"
+            System.out.println("num0fCards:"+ myHand.getNum0fCards() + " |"
                  + "scroe:" + myHand.getScore());
          
        }
-       
+       myDealer.declerWinner();
     }
     
 }
