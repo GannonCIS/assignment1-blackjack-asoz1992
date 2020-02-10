@@ -40,7 +40,7 @@ public class Deck {
      }
 
        public  Card dealCard(){
-           Card next = myCards [nextCard];
+           Card next = myCards[nextCard];
            nextCard++;
            if(nextCard >51){
                shuffle();
